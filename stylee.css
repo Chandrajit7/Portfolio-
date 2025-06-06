@@ -1,0 +1,133 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1c1f26;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.nav-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #00d8ff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #e6f0ff, #f2fcff);
+  padding: 80px 40px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.side {
+  flex: 1;
+  padding: 20px;
+}
+.side h1 {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  color: #2c3e50;
+}
+.side p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+.center {
+  flex: 0 0 220px;
+}
+.profile-img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Resume Section */
+.resume {
+  padding: 60px 40px;
+  background: #ffffff;
+  transition: all 0.4s ease-in-out;
+}
+.resume section, .resume div {
+  margin-bottom: 40px;
+  background: #f9fbfd;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+.resume section:hover, .resume div:hover {
+  transform: translateY(-5px);
+}
+.resume h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-left: 4px solid #00bcd4;
+  padding-left: 10px;
+}
+.resume ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.resume ul li {
+  margin-bottom: 8px;
+  list-style-type: square;
+}
+.resume a {
+  color: #0077cc;
+  text-decoration: none;
+}
+.resume a:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+/* Contact Info */
+#contact p {
+  margin: 6px 0;
+}
+
+/* Footer (Optional) */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #888;
+  background: #1c1f26;
+}
